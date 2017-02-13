@@ -1,0 +1,8 @@
+<h2>******** Now your result ********</h2>
+<p>Your word: <%= @attempt %></p>
+<p>Time Taken to answer: <%= @score_hash[:time].to_s%></p>
+<p>Translation: <%= @score_hash[:translation]%></p>
+<p>Your score: <%= @score_hash[:score].to_s%></p>
+<p>Message: <%= @score_hash[:message]%></p>
+
+<%= link_to "Play again!", game_path %>
